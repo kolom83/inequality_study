@@ -29,7 +29,7 @@
       </cross_links>
     </module>
 
-    <module id="M-3" status="planned">
+    <module id="M-3" status="done">
       <name>time_series_analysis</name>
       <path>src/time_series_analysis.py</path>
       <purpose>Анализ динамики неравенства во времени по отдельным странам: временные ряды и корреляции Пирсона/Спирмена</purpose>

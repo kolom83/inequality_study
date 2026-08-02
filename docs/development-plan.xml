@@ -24,11 +24,11 @@
       </tasks>
     </phase>
 
-    <phase id="P-2" status="planned">
+    <phase id="P-2" status="done">
       <name>Анализ динамики неравенства во времени</name>
       <description>Исторический анализ по странам: временные ряды, корреляции Пирсона/Спирмена, тепловые карты</description>
       <tasks>
-        <task id="T-3" module_ref="M-3" status="planned">
+        <task id="T-3" module_ref="M-3" status="done">
           <description>Реализовать анализ временных рядов по странам и расчёт корреляций с неравенством</description>
           <implements>UC-2</implements>
         </task>
