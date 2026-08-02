@@ -57,11 +57,11 @@
       </tasks>
     </phase>
 
-    <phase id="P-5" status="planned">
+    <phase id="P-5" status="done">
       <name>Выбор показателя неравенства на основе исследований</name>
       <description>Обзор научной литературы 2020-2025, сравнительная таблица показателей, обоснование выбора (с Perplexity для глубокого ресерча)</description>
       <tasks>
-        <task id="T-6" module_ref="M-6" status="planned">
+        <task id="T-6" module_ref="M-6" status="done">
           <description>Подготовить глоссарий и обосновать выбор 1-2 показателей неравенства</description>
           <implements>UC-5</implements>
         </task>

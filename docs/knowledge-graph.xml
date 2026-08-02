@@ -63,7 +63,7 @@
       </cross_links>
     </module>
 
-    <module id="M-6" status="planned">
+    <module id="M-6" status="done">
       <name>indicator_selection</name>
       <path>src/indicator_selection.py</path>
       <purpose>Выбор наиболее релевантного показателя неравенства на основе обзора исследований (UC-5), работа с глоссарием</purpose>

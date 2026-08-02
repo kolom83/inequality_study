@@ -1,0 +1,494 @@
+# Результаты исследования UC-5: показатели неравенства
+
+Сгенерировано: 2026-08-02 17:56
+
+Модель: sonar-pro
+
+---
+
+## Сравнение показателей неравенства
+
+**Запрос:** Compare income inequality indicators: Gini coefficient, Theil index, P90/P10 ratio, top-1% income share, Atkinson index. What are the strengths and limitations of each for cross-country research on inequality over the past 5 years? Which measures are recommended by recent methodological literature (2020-2025)?
+
+For **cross-country inequality research over the past 5 years**, the best practice in the recent methodological literature is **not to rely on a single indicator**; instead, use a **small set of complementary measures** that capture the *middle*, *tails*, and *decomposability* of the distribution.[3][5][8][13] The strongest recurring recommendation from 2020–2025 sources is to pair a **distribution-wide index** such as the **Gini** or **Atkinson** with a **tail-sensitive measure** such as **P90/P10** or **top-1% share**, and to use **Theil** when decomposition across groups or regions matters.[3][5][8][13]
+
+| Measure | What it captures best | Strengths for cross-country work | Main limitations |
+|---|---|---|---|
+| **Gini coefficient** | Overall inequality across the full distribution | Widely available, easy to interpret, standard in international databases, comparable across countries and time, uses information from the whole distribution.[5][12][13] | Can miss changes at the tails, cannot distinguish different distributions with the same value, depends on the income concept and data method, and cross-country comparability can be affected by mixed survey methods and income/consumption sources.[6][11][13] |
+| **Theil index** | Inequality with a focus on decomposability | Decomposes into within- and between-group inequality, useful for subgroup, regional, or source decomposition.[5] | Less intuitive than Gini, and comparability can be awkward across populations with different sizes or group structures.[5] |
+| **P90/P10 ratio** | Spread between upper and lower deciles | Very transparent, easy to explain, good for capturing changes in the upper-lower gap.[5][13] | Ignores the middle of the distribution and discards most information between the two percentiles.[5][13] |
+| **Top-1% income share** | Concentration at the very top | Excellent for detecting elite capture and top-end divergence, especially in recent decades.[8] | Says nothing about inequality below the top 1%, is sensitive to top-income measurement and tax-unit definitions, and is not a complete distributional summary.[8] |
+| **Atkinson index** | Welfare-sensitive inequality with explicit aversion to inequality | Normatively transparent because it embeds an inequality-aversion parameter; can rank distributions in a way that reflects social preferences, and is more sensitive to parts of the distribution selected by the parameter.[13] | Requires choosing an inequality-aversion parameter, so results depend on normative assumptions; less standard in many international datasets than the Gini.[13] |
+
+**Gini coefficient.** Recent sources still describe the Gini as the default cross-country summary measure because it is widely reported, easy to interpret, and based on the full distribution.[5][12][13] Its main weakness is that it can hide very different distributions with the same value and is comparatively less sensitive to inequality at the tails, which matters when top incomes or bottom deprivation are changing rapidly.[6][13] Cross-country comparisons are also only as good as the underlying data, and the World Bank/OWID note that pooled surveys with different methodologies and mixed income/consumption concepts limit comparability over time and across countries.[11]
+
+**Theil index.** The literature continues to value Theil mainly for **decomposition**, not for intuitive communication.[5] That makes it especially useful in research designs that want to separate inequality into between-country, between-region, or within-group components, but it is less appealing as a headline indicator for non-specialist audiences because it is harder to interpret than the Gini.[5]
+
+**P90/P10 ratio.** This is a strong choice when the question is specifically about the gap between the rich and the poor, because it is simple and transparent.[5][13] Its drawback is that it ignores what happens in the middle of the distribution and therefore cannot tell whether inequality changes are being driven by broad dispersion or by changes concentrated near the tails.[5][13]
+
+**Top-1% income share.** Methodological work in the last five years increasingly treats top shares as essential when the research question concerns **top-end concentration** rather than overall inequality.[8] Its strength is precision at the very top, but it is intentionally narrow: a country can have a stable top-1% share while middle-income inequality rises sharply, or vice versa.[8]
+
+**Atkinson index.** Recent literature continues to highlight the Atkinson index because it is explicitly linked to a social welfare function and can be tuned with an inequality-aversion parameter.[13] That makes it useful when the analysis wants to state how much inequality society is willing to trade off against average income, but it also means results depend on a normative parameter choice, which can complicate cross-country comparisons if different studies choose different parameter values.[13]
+
+**What recent methodological literature recommends (2020–2025).**
+- Use **multiple indicators**, not one, because each measure emphasizes a different part of the distribution.[3][5][8][13]
+- Use a **full-distribution summary** such as **Gini** or **Atkinson** for overall comparisons.[5][13]
+- Add a **tail-sensitive metric** such as **P90/P10** or **top-1% share** when extreme inequality is important.[5][8][13]
+- Use **Theil** when decomposition into within- and between-group inequality is needed.[5]
+- Treat cross-country comparisons cautiously when datasets mix **income vs. consumption**, survey methods, or tax/administrative sources, because methodological inconsistency can dominate small differences in the index values.[11][13]
+
+If you want, I can turn this into a **publication-style comparison matrix** with columns for **formula intuition, sensitivity to tails, decomposability, interpretability, and data requirements**.
+
+### Источники
+
+1. https://en.wikipedia.org/wiki/Gini_coefficient
+2. https://www.ijfmr.com/papers/2024/5/27722.pdf
+3. https://www.ecb.europa.eu/pub/pdf/scpsps/ecb.sps31~269c917f9f.en.pdf
+4. https://blogs.adb.org/node/2121
+5. https://wol.iza.org/uploads/articles/495/pdfs/measuring-income-inequality.pdf
+6. https://pmc.ncbi.nlm.nih.gov/articles/PMC7614289/
+7. https://journalism.university/fundamentals-of-development-and-communication/tools-measure-economic-inequality/
+8. https://documents1.worldbank.org/curated/en/099549506102441825/pdf/IDU1bd155bac16d78143af188331f87564a9d6c8.pdf
+9. https://www.youtube.com/watch?v=j8eNLD3gv6s
+10. https://www.ilo.org/media/336916/download
+11. https://ourworldindata.org/grapher/economic-inequality-gini-index
+12. https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/methodologies/theginicoefficient
+13. https://www.nature.com/articles/s41599-020-0484-6
+14. https://gardner.utah.edu/blog/blog-what-does-the-gini-coefficient-show-us/
+15. https://www.reddit.com/r/sociology/comments/1kn1mt1/how_does_the_gini_index_make_any_sense/
+16. https://www.facebook.com/AfricansRising/posts/the-gini-coefficient-is-the-most-used-inequality-index-often-used-to-measure-inc/1371604755000110/
+
+---
+
+## DINA Guidelines и распределительные национальные счета
+
+**Запрос:** What do the DINA Guidelines 2025 (Distributional National Accounts) recommend as the preferred inequality measures? How should income and wealth inequality be defined and measured per World Inequality Lab methodology? Pre-tax vs post-tax income concepts.
+
+The DINA Guidelines 2025, as used by the World Inequality Lab (WIL) and the World Inequality Database (WID), recommend **percentile‑based distribution measures (shares of total income/wealth going to the top 10%, top 1%, bottom 50%, etc.)** as the *preferred inequality indicators*, computed on **pre‑tax national income (pre‑tax post‑replacement income)** and **national wealth**, using **equal‑split adult** units as the benchmark.[1][10][14]
+
+Below is a structured summary of what this implies for inequality *measures*, *definitions*, and *income concepts*.
+
+---
+
+## 1. Preferred inequality measures in DINA Guidelines 2025
+
+The DINA/WIL methodology prioritizes **distributional measures tied to national accounts totals**, rather than a single scalar index:
+
+- **Top and bottom income and wealth shares**
+  - **Top 10%, top 1%, top 0.1% shares** of national income and wealth.[1][14]  
+  - **Bottom 50% share** of national income and wealth.[1][14]  
+  - These shares are calculated on **national income and national wealth aggregates**, not just survey concepts, ensuring consistency with macro totals.[1][2][14]
+
+- **Percentile group profiles**
+  - Average income/wealth for each **percentile or ventile** of the distribution (e.g., P0–50, P50–90, P90–99, P99–100) relative to the average national income.[1][14]  
+  - Used to construct **pre‑tax vs post‑tax distributions** and to assess redistribution effects.[12][16]
+
+- **Ratios between groups (simple dispersion measures)**
+  - Ratios like **Top 10% / Bottom 50%**, **Top 1% / Bottom 50%**, widely used in WID outputs to summarize inequality.[16][18]  
+  - These are preferred for *communication* and *policy analysis* because they are directly interpretable.
+
+- **Full distribution curves**
+  - Continuous **generalized Pareto curves** or other non‑parametric interpolation to model the full distribution from percentile tabulations, especially at the top.[5]  
+  - This allows computation of any chosen index (Gini, Theil, etc.), but the **core DINA outputs focus on shares and ratios**.[1][14]
+
+The DINA documents do not privilege a single scalar index (e.g. Gini) as the main indicator; instead, they systematically emphasize **top/bottom shares and percentile profiles linked to national accounts**.[1][11][13] Scalar indices can be computed from these distributions, but are secondary.
+
+---
+
+## 2. How income inequality is defined and measured (WIL / DINA)
+
+### 2.1 Units of observation (who is being compared?)
+
+DINA defines inequality over **individuals**, but with a specific benchmark:
+
+- **Benchmark unit: equal‑split adults**
+  - Income is **distributed to all resident adults** (usually age 20+).[1]  
+  - All income of a couple/household is **split equally between adult partners** (“equal‑split”), regardless of who formally receives it.[1][10]  
+  - This is the **benchmark series** recommended for cross‑country and over‑time comparisons.[1][10]
+
+- **Alternative units (used when needed)**
+  - **Individualistic adults**: each person is assigned only the income they personally receive, without splitting within couples.[1][10]  
+  - **Full population series**: income distributed to the entire resident population, including children.[1]  
+
+The guidelines explicitly recommend **equal‑split adult series as the standard** for inequality measurement, with other units provided as complements where relevant.[1][10]
+
+### 2.2 Income concepts: the four DINA stages
+
+DINA distinguishes **four income concepts**, each corresponding to a different stage of redistribution.[10][13][7]
+
+| Concept (DINA) | Short description | Role in WIL inequality analysis |
+| --- | --- | --- |
+| **(1) Pretax factor income** | Income *before* any social transfers or taxes; includes labor income, capital income, and other market income; excludes replacement income (pensions, unemployment benefits).[4][10][13] | Used primarily to analyze *market inequality* before welfare systems. |
+| **(2) Pretax post‑replacement income** (often called **“pre‑tax income”**) | Factor income **plus** social insurance *replacement income* (e.g. contributory pensions, unemployment benefits), still **before taxes and means‑tested transfers**.[4][7][10][13][16] | **Benchmark concept** for DINA income inequality; main “pre‑tax income” used in WID series.[10][16][18] |
+| **(3) Post‑tax disposable income** | Concept (2) **minus** taxes on income and social contributions, **plus** cash social assistance (means‑tested benefits), **excluding** in‑kind transfers and collective consumption.[10][13][7] | Used to study inequality after direct taxes and cash transfers (standard “disposable income” concept). |
+| **(4) Post‑tax national income** | Concept (3) **plus** the value of in‑kind transfers (e.g. public education, health), collective consumption, and other public spending recorded as part of national income.[10][13] | Used to analyze inequality after *full government redistribution* including in‑kind services. |
+
+Key methodological point:
+
+- DINA Guidelines recommend **concept (2) – pretax post‑replacement income – as the benchmark income concept for measuring income inequality.**[10][13][16]  
+- WID’s “pre‑tax national income” series align closely with this stage, though they also ensure **consistency with national income aggregates** by adding retained earnings, production taxes, etc., and distributing them across individuals.[5][13][14]
+
+### 2.3 Aggregation and consistency with national accounts
+
+- Income inequality is measured over **national income**, i.e. a macro aggregate closely related to GDP but adjusted to reflect **household‑level distribution** and including retained earnings and production taxes allocated to individuals.[1][14]  
+- DINA guidelines stress that **the sum of individual incomes equals national income**, so that inequality measures are fully consistent with macroeconomic totals.[1][2][14]
+
+### 2.4 Data sources and top‑tail correction
+
+- **Survey data** are used for the bulk of the distribution, especially middle and lower ranges.[7][10]  
+- **Tax data and other administrative sources** are used to correct **top incomes**, where surveys under‑represent high‑income individuals.[7][5]  
+- For countries where only **consumption‑based surveys** are available, e.g. many African countries, DINA converts consumption profiles into income distributions and then adjusts from post‑tax to corrected pre‑tax income and finally to national income.[5]
+
+---
+
+## 3. How wealth inequality is defined and measured (WIL / DINA)
+
+### 3.1 Wealth concept
+
+DINA defines **wealth** (net worth) at the individual level as:
+
+- **Total household wealth distributed to individuals**, including:
+  - **Financial assets** (deposits, equities, bonds, etc.)  
+  - **Non‑financial assets** (housing, land, business assets, etc.)  
+  - **Minus liabilities** (mortgages, consumer credit, other debts).[1][4]
+
+Aggregation:
+
+- For macro balance sheets, DINA decomposes wealth of **four sectors**: households, NPISH (non‑profit institutions serving households), corporations, and government.[1][4]  
+- Distributional series typically assign **household and NPISH wealth** to individuals, while corporate and public assets are treated according to allocation rules so that individual wealth sums to the **national wealth total**.[1][4][14]
+
+### 3.2 Units and distribution
+
+- **Equal‑split adults** are again the **benchmark unit**: household wealth is split equally among adult members for the main series.[1][10]  
+- Inequality is then measured via:
+  - **Top wealth shares** (Top 10%, 1%, 0.1%).[1][2]  
+  - **Bottom 50% wealth share**, often close to zero or negative in high‑inequality countries.[1][14]  
+  - **Ratios of top‑to‑bottom or top‑to‑middle wealth holdings.**
+
+Because wealth is more concentrated than income, DINA pays special attention to **top‑tail modeling** (tax wealth data where available, rich lists, etc.), though detailed procedures are country‑specific and documented in WID technical papers.[1][11]
+
+---
+
+## 4. Pre‑tax vs post‑tax income in WIL/WID and how inequality is compared
+
+### 4.1 Core distinction
+
+In WIL/WID:
+
+- **“Pre‑tax income”** generally refers to **pretax post‑replacement income**: income after social insurance pensions and unemployment benefits, but **before**:
+  - income taxes  
+  - social contributions  
+  - means‑tested cash transfers  
+  - in‑kind transfers.[4][10][13][16]
+
+- **“Post‑tax income”** usually refers to **post‑tax disposable income** or **post‑tax national income**, depending on the analysis:
+  - **Post‑tax disposable income**: after direct taxes and social contributions, including cash social assistance, excluding in‑kind services.[10][13]  
+  - **Post‑tax national income**: adds in‑kind transfers and collective consumption; this is the broadest concept of income after full government redistribution.[10][13]
+
+When WID publishes “before taxes and transfers” vs “after taxes and transfers” distributions (for example, in South Africa or EU countries), these correspond to **pre‑tax income vs post‑tax income series in the DINA sense**.[16][18]
+
+### 4.2 Measuring redistribution and its effect on inequality
+
+To study the impact of the tax‑and‑transfer system, WIL compares inequality at different stages:
+
+- **Inequality of pre‑tax income (concept 2)**:
+  - Captures *market outcomes plus contributory social insurance* but **before redistributive taxes and transfers**.[4][10][16]  
+  - Used to assess “primary inequality” that the tax‑benefit system confronts.
+
+- **Inequality of post‑tax disposable income (concept 3)**:
+  - Shows the distribution after **direct taxes and cash transfers**, reflecting the immediate impact of fiscal redistribution.[10][13]  
+
+- **Inequality of post‑tax national income (concept 4)**:
+  - Evaluates the distribution after **the full public welfare state**, including *in‑kind* public services like health and education.[10][13]  
+
+Typical analysis:
+
+- Compare **top and bottom shares** or **group ratios** across these three stages to quantify the **redistributive effect**.
+  - Example: WIL presentations for South Africa show that before taxes the bottom 50% earns **63 times less** than the top 10%, while **after taxes** the bottom 50% earns **24 times less** than the top 10%.[16]  
+  - Income is measured after pensions and unemployment benefits but before other taxes and transfers for the pre‑tax series.[16]
+
+In short, **WIL’s standard practice is to define and measure income inequality at multiple redistribution stages using pre‑tax (post‑replacement) and post‑tax concepts, with top/bottom shares as the key indicators.**
+
+---
+
+## 5. Relation to more conventional indicators (Gini, S80/S20, etc.)
+
+- DINA/WIL focuses on **distributional national accounts** and comprehensive **pre‑tax and post‑tax series**, rather than on a single inequality index.[1][13][14]  
+- Scalar indicators like **Gini coefficients**, **Theil indices**, or the **income quintile share ratio (S80/S20)** can be and are sometimes computed from DINA distributions, but:
+  - They are not the *primary* recommended measures in the DINA Guidelines.  
+  - WIL emphasizes **top/bottom shares and percentile‑based ratios** because they:
+    - are more directly interpretable for policy  
+    - reveal concentration at the very top in ways that Gini or S80/S20 may obscure.[1][11][13][15][18]
+
+If you need, I can next map these DINA concepts to specific formulae (e.g., how to compute top 10% share and group ratios from microdata, or how to derive Gini from a DINA‑style distribution), or explain how to implement pre‑tax vs post‑tax series in practice for a particular country.
+
+### Источники
+
+1. https://wid.world/document/distributional-national-accounts-dina-guidelines-2025-methods-and-concepts-used-in-the-world-inequality-database/
+2. https://wid.world/news-article/new-data-revised-methods-highlights-from-the-world-inequality-database-2025-update/
+3. https://inequalitylab.world/www-site/uploads/2026/03/2026-WIL-newsletter-March-2026.pdf
+4. https://unstats.un.org/unsd/statcom/groups/NetEconStat/Meetings/GDPSprint2023FifthMeeting/WorldInequalityLab_DINA_Guidelines_2021-july.pdf
+5. https://wid.world/document/2025-dina-update-for-africa/
+6. http://www.ecineq.org/milano/WP/ECINEQ2025-682.pdf
+7. https://www.mof.go.jp/pri/research/discussion_paper/ron371.pdf
+8. https://cordis.europa.eu/project/id/856455
+9. https://ideas.repec.org/p/inq/inqwps/ecineq2025-682.html
+10. https://www.mof.go.jp/pri/research/special_report/f10_26.pdf
+11. https://bibbase.org/network/publication/blanchet-chancel-flores-morgan-distributionalnationalaccountsguidelinesconceptsandmethodsusedintheworldinequalitydatabase-2021
+12. https://cordis.europa.eu/project/id/856455/reporting
+13. https://csu.gov.cz/docs/107516/82a9f93c-33ff-fab7-deeb-49183f6ca5f8/EG-DNA-Handbook.pdf?version=1.0
+14. https://unstats.un.org/unsd/trade/events/2019/Shanghai/China_HL_Seminar_5b_World_Inequality_Lab.pdf
+15. https://www.europarl.europa.eu/RegData/docs_autres_institutions/commission_europeenne/com/2025/0958/COM_COM(2025)0958_EN.pdf
+16. https://unstats.un.org/unsd/statcom/groups/NetEconStat/Meetings/GDPSprint2023FifthMeeting/Chancel2023NYC-UN.pdf
+17. https://www.bea.gov/system/files/papers/measuring-inequality-in-the-national-accounts_0.pdf
+18. https://ourworldindata.org/economic-inequality
+
+---
+
+## Выбор меры неравенства для анализа факторов
+
+**Запрос:** In empirical research on the determinants of inequality (GDP, productivity, wealth concentration), which inequality indicator is most informative and why: Gini, top-1% share, top-10% share, or income share of bottom 50%? Recent academic evidence 2020-2025 on sensitivity of different measures to changes at different parts of the income distribution.
+
+For **empirical work on the determinants of inequality**, no single indicator is universally “most informative”; the best choice depends on *which part of the income distribution* you think GDP, productivity, or wealth concentration is affecting. That said, if your question is about **mechanisms**, the **top-1% share** is usually the most informative for *upper-tail* dynamics, while the **Gini** is the best general-purpose summary but is less diagnostic about *where* change occurs in the distribution.[9][13][8]
+
+- **Gini**: best as a broad summary measure, but it is relatively **more sensitive to changes in the middle** of the distribution and **less sensitive at the very bottom and very top**, so it can miss developments driven by top-income concentration or deep poverty changes.[9]
+- **Top-1% share**: most informative when the determinant is likely to affect **elite incomes, capital income, rents, or wealth concentration**; it directly captures upper-tail concentration and is more sensitive than the Gini to changes at the top.[9][13]
+- **Top-10% share**: useful for broader upper-tail shifts, but it is **less targeted** than the top-1% share and can dilute very large changes among the richest households into a wider group.[13]
+- **Bottom-50% share**: informative for **broad-based growth, wage compression, and redistribution** affecting the lower half, but it is a coarse indicator and can move even when the main action is in the middle or upper parts of the distribution.[13]
+
+On the sensitivity question, the most consistent recent evidence is that **the Gini is a compromise statistic**, while **tail shares are better when the research question is about tail-specific mechanisms**. The UN’s 2020 briefing states explicitly that the Gini is “more responsive” to changes in the **middle** and less responsive at the extremes, and the World Inequality Report framework treats **top-10%, bottom-50%, and top-1%** shares as complementary because they isolate different segments of the distribution.[9][13]
+
+For **2020–2025 empirical practice**, the strongest methodological takeaway is to **report at least one summary measure plus one or two tail measures** rather than relying on a single indicator. Recent inequality research and measurement guidance increasingly pair the Gini with **top shares** because the Gini alone does not reveal whether inequality is driven by the bottom, middle, or top.[5][9][13]
+
+If you need a single choice for studies on **GDP, productivity, and wealth concentration**, I would recommend this ranking:
+
+1. **Top-1% share** if the hypothesized channel is **wealth concentration, capital income, superstar firms, or policy favoring high earners**.[13][9]  
+2. **Gini** if you need a **general cross-country or panel summary** of overall inequality.[8][9]  
+3. **Top-10% share** if you care about the **broader upper tail** rather than just the extreme rich.[13]  
+4. **Bottom-50% share** if your focus is **shared growth, labor-market compression, or poverty-linked distributional change**.[13]
+
+A practical empirical strategy is to **use Gini as the headline outcome and add top-1% and bottom-50% shares as diagnostics**; that combination is usually the most informative for identifying whether GDP or productivity gains are being captured by the middle, the bottom, or the top.[9][13]
+
+### Источники
+
+1. https://business.columbia.edu/sites/default/files-efs/imce-uploads/Joseph_Stiglitz/3%20-%20G20%20Global%20Inequality%20Report%20-%20Technical%20note.pdf
+2. https://eml.berkeley.edu/~saez/course/ps1sol.pdf
+3. https://en.wikipedia.org/wiki/Income_inequality_metrics
+4. https://documents1.worldbank.org/curated/en/099549506102441825/pdf/IDU1bd155bac16d78143af188331f87564a9d6c8.pdf
+5. https://www.nature.com/articles/s41599-020-0484-6
+6. https://wid.world/world/
+7. https://ourworldindata.org/grapher/economic-inequality-gini-index
+8. https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/families/methodologies/theginicoefficient
+9. https://www.un.org/development/desa/dspd/wp-content/uploads/sites/22/2020/01/SDB_8_Income_inequality_trends.pdf
+10. https://thedocs.worldbank.org/en/doc/206293abe6ad06f4dc8c2fb541a3b93b-0330272022/original/Chancel2022WB.pdf
+11. https://data.worldbank.org/indicator/SI.POV.GINI
+12. https://en.wikipedia.org/wiki/List_of_countries_by_income_inequality
+13. https://wir2022.wid.world/www-site/uploads/2021/12/CountrySheets_WorldInequalityReport2022_-WorldInequalityLab_7Dec.pdf
+14. https://www.pewresearch.org/social-trends/2020/01/09/trends-in-income-and-wealth-inequality/
+15. https://en.wikipedia.org/wiki/Economic_inequality
+16. https://www.wider.unu.edu/project/world-income-inequality-database-wiid
+17. https://www.facebook.com/OurWorldinData/posts/what-share-of-income-goes-to-the-richest-1-in-your-countryhow-about-the-richest-/1553126290147274/
+18. https://en.wikipedia.org/wiki/Gini_coefficient
+19. https://wid.world/
+20. https://apps.urban.org/features/wealth-inequality-charts/
+
+---
+
+## Неравенство доходов vs неравенство богатства
+
+**Запрос:** Income inequality vs wealth inequality: which is more relevant for studying distributive processes and why? How strongly do income and wealth concentration co-move across countries? Recent research 2020-2025 on the relationship between income and wealth inequality.
+
+Income and wealth inequality are **complementary but conceptually distinct** lenses on distributive processes: *income inequality* is more directly relevant for studying current production, labour markets and redistribution, while *wealth inequality* is more relevant for long‑run accumulation, power and intergenerational dynamics. Across countries, **income and wealth inequality are strongly positively correlated but not identical**, with recent cross‑country work finding correlations around **0.8** between income and wealth Ginis.[3][4]
+
+---
+
+## 1. Income vs wealth inequality: which is more relevant, and for what?
+
+### Conceptual distinction
+
+- **Income (flow)**: earnings over a period (wages, self‑employment income, transfers, capital income).[2][14][19]  
+- **Wealth (stock)**: accumulated assets minus liabilities (housing, financial assets, business assets, pensions, net of debt).[2][6][14][15]
+
+Income inequality captures how the *current product* of the economy is distributed, while wealth inequality captures how *past income and returns* have accumulated into stocks of assets and claims.[2][14]
+
+### Which is more relevant for studying distributive processes?
+
+It depends on *which part* of the distributive process you want to study:
+
+**More relevant for current distributive processes (production, labour markets, fiscal redistribution): → income inequality**
+
+- Income is the immediate outcome of market forces (wage setting, bargaining, returns to skills, unemployment) and *tax–transfer systems*.[7][14]  
+- Empirical work on determinants of economic inequality has historically focused mostly on **income inequality**, because data are more widely available and conceptually tied to standard models of labour and product markets.[3]  
+- For evaluating how policies like minimum wages, unionization, progressive taxes, or social transfers affect inequality *today*, income distributions (market vs disposable income) are the natural object.[7][14]  
+
+**More relevant for long‑run distributive processes (accumulation, power, intergenerational transmission): → wealth inequality**
+
+- Wealth is accumulated savings out of past income plus capital gains; high‑income households save a larger share, so wealth inequality is mechanically larger and more persistent than income inequality.[14][11]  
+- Wealth inequality is typically **much higher** than income inequality: Gini coefficients for wealth are roughly **twice** those for income in many advanced economies.[4][11][20]  
+  - OECD: top 10% get about **25–30% of income**, but own **45–70% of wealth**; in the US, the top 10% hold ~79% of wealth.[4][9]  
+  - UK example: wealth Gini ≈0.63 vs income Gini ≈0.34.[11]  
+- Wealth determines access to *capital income*, political influence, credit, entrepreneurship, and resilience to shocks; it is the key variable for understanding *social mobility and opportunity*, not just current living standards.[4][20]  
+- A European Parliament briefing stresses that because high‑income households save more and asset returns often exceed wage growth, **wealth accumulates faster than labour income**, making wealth inequality both larger and more structurally embedded than income inequality.[14]  
+
+**For studying the *full* distributive process, you need both**
+
+Recent conceptual work emphasizes income and wealth as **joint distributions**, not separate phenomena:[1][5][12]
+
+- Top incomes increasingly include *capital income*, driven by high and concentrated wealth holdings; this creates feedback loops where **increasing top income shares further concentrate wealth**, and concentrated wealth generates more capital income at the top.[1][7][16]  
+- The UNCTAD analysis notes a “striking feature” of a **close bilateral relationship** between wealth and income inequality, but warns that focusing on income alone misses important aspects of financial inclusion, asset ownership and structural exclusion.[3]  
+
+**Why wealth inequality has gained prominence**
+
+- Better administrative and survey data on assets and top wealth shares (e.g. wealth tax records, distributional national accounts) have revealed that **wealth inequality is much greater** than income inequality in all OECD countries studied.[4][9][18]  
+- VoxEU research on public perceptions finds that people largely **do not distinguish** between income and wealth inequality; they update beliefs using a *unidimensional notion of “economic inequality”*, even though wealth is far more concentrated.[9]  
+
+**Synthesis for research priorities**
+
+- If the goal is to understand **how the economy’s current income is divided** and how tax–transfer policy affects living standards, **income inequality** is the central metric.  
+- If the goal is to understand **who controls assets, future income streams, and opportunities**, and how inequality persists across generations, **wealth inequality** is more relevant.  
+- For modern distributive analysis, most scholars argue for a **joint framework** where income inequality is viewed as the *flow* that generates and is shaped by wealth inequality as the *stock*.[1][5][12][16]
+
+---
+
+## 2. How strongly do income and wealth concentration co‑move across countries?
+
+### Cross‑country correlation
+
+Recent cross‑country work finds **strong but imperfect co‑movement**:
+
+- A UNCTAD working paper (2023) using global data reports a **correlation of 0.82** between the **wealth Gini** and the **income Gini** across countries.[3]  
+  - This indicates that countries with higher income inequality *tend* to have higher wealth inequality, but the relationship is far from one‑for‑one.  
+- OECD’s 2024 overview confirms that **wealth is more unequal than income in all countries studied**, but explicitly notes that **“countries with lower income inequality levels are not necessarily those with low wealth concentration.”**[4]  
+
+This fits a pattern:
+
+- OECD data:  
+  - Top 10% income share ≈**25%** of total income on average;  
+  - Top 10% wealth share ≈**>50%**, reaching ~**79% in the US**.[4]  
+- Other sources (e.g. fairness index summaries) similarly document that wealth Ginis are **roughly twice** income Ginis, and that top wealth shares are more extreme than top income shares.[11][20]  
+
+### Why co‑movement is strong but not perfect
+
+**Mechanical links**
+
+- Higher income inequality, especially at the top, increases capacity to save, so **income inequality “begets” wealth inequality** over time.[14][16]  
+- Capital income (dividends, interest, rents) is a major component of top incomes; where wealth is more concentrated, income from wealth is more concentrated, reinforcing co‑movement.[1][7][18]  
+
+**But institutions, asset markets and history matter**
+
+- Differences in *housing systems, credit markets, pension systems, taxation of capital and inheritances, and financial inclusion* can produce very different wealth distributions for similar income distributions.[3][4][17]  
+  - Example: Two countries with similar income Ginis can differ dramatically in homeownership, public pension generosity, or capital gains taxation—leading to much higher wealth concentration in one than the other.  
+- OECD notes that some countries with relatively moderate income inequality have **extremely concentrated wealth**, and vice versa.[4]  
+
+So empirically:
+
+- **Correlation ≈0.8** (UNCTAD) means strong positive association: higher income inequality usually comes with higher wealth inequality.[3]  
+- But **rankings and magnitudes differ** enough that one cannot infer a country’s wealth inequality solely from its income inequality.
+
+---
+
+## 3. Recent research (2020–2025) on the relationship between income and wealth inequality
+
+Below are key themes from recent work, with representative sources in the 2020–2025 window and closely related foundational work where needed.
+
+### 3.1 Joint dynamics of income and wealth (“income inequality begets wealth inequality”)
+
+- A Stone Center discussion with Steven Durlauf emphasises that **income inequality begets wealth inequality**, highlighting the causal pathway from unequal earnings to unequal asset accumulation and then to unequal capital income.[16]  
+- Conceptual and methodological work stresses that *wealth is cumulated savings out of income*, and the **saving rate rises with income**, mechanically amplifying inequality in the wealth distribution.[14][5]  
+
+Key mechanisms studied:
+
+- **Saving behavior:** higher‑income households save a larger fraction of income, so initial income differences become magnified into wealth differences.[14]  
+- **Return differentials:** wealthier households access higher‑yield assets and benefit more from capital gains, accelerating divergence even when income inequality is stable.[11][18][20]  
+- **Capital vs labour income:** as a higher share of national income accrues as capital income (profits, dividends), and as capital is more concentrated than labour income, overall income inequality becomes increasingly **linked to wealth concentration**.[1][7][18]  
+
+### 3.2 Cross‑country evidence: high correlation but distinct dimensions
+
+- The UNCTAD working paper (2023) on **wealth distribution, income inequality and financial inclusion** documents that wealth inequality is **more concentrated** than income inequality and that there is a **“high correlation between both variables”**, with a reported **income–wealth Gini correlation of 0.82**.[3]  
+  - The paper argues that focusing only on income inequality leads to an incomplete view of distributive processes and urges integration of wealth measures, particularly in analyses of financial inclusion and access to assets.[3]  
+
+- OECD’s *Society at a Glance 2024* chapter “Income and wealth inequalities” provides updated distributions by country and highlights that:
+  - Wealth is **much more unequally distributed** than income in all OECD countries;  
+  - There is clear co‑movement, but **income inequality rankings do not map one‑to‑one to wealth inequality rankings**, underscoring the need to treat them as related but distinct phenomena.[4]  
+
+### 3.3 Distributional national accounts and top shares
+
+- Saez and Zucman (2020) present **distributional macroeconomic accounts** for the US, integrating national accounts with distributional data to jointly analyse income and wealth inequality.[18]  
+  - They show that both **income and wealth** have become more concentrated at the top since the 1980s, with the top 1% and 0.1% gaining disproportionately in both dimensions.[18]  
+  - Their work quantifies how changes in tax policy, capital returns, and labour market institutions jointly shaped *both* income and wealth concentration.  
+
+- Earlier work (e.g. at LSE and UBC) provides the theoretical and empirical background:  
+  - Wealth distributions consistently show **more extreme top shares and heavier tails** than income distributions; Lorenz curves for wealth lie further from equality and wealth Ginis are higher.[1][10][20]  
+  - These features are central to newer macro models of inequality and growth, which treat the joint distribution of income and wealth as a state variable.[1][2][12]  
+
+### 3.4 Public perceptions and political economy (2020s)
+
+- A VoxEU column on **public perceptions of income and wealth distributions** (mid‑2020s) analyses experiments where respondents are shown either income or wealth distributions.[9]  
+  - Findings:  
+    - People **do not clearly differentiate** between income and wealth inequality, even when concepts are explained;  
+    - They tend to treat “economic inequality” as a **unidimensional construct**, updating beliefs similarly whether shown income or wealth data;  
+    - This has implications for policy communication: large differences in wealth concentration may not be fully appreciated by the public.[9]  
+
+This line of research suggests that while economists distinguish sharply between income and wealth inequality, political support for policy may respond to a more diffuse notion of “inequality.”
+
+### 3.5 Wealth, inequality and financial inclusion
+
+- The UNCTAD 2023 paper connects **wealth inequality, income inequality, and financial inclusion**, arguing that:
+  - Wealth inequality is **more concentrated** than income inequality;  
+  - There is a **strong positive correlation** between the two;  
+  - Financial inclusion (access to bank accounts, credit, savings instruments) shapes both distributions by enabling or constraining asset accumulation for lower‑income households.[3]  
+
+This strand of work highlights that without tackling wealth inequality and asset ownership, policies aimed at income inequality may have limited impact on long‑run distributive dynamics.
+
+### 3.6 Persistence and intergenerational transmission
+
+- Research summarised in reviews like “How Wealth Inequality Shapes Our Future” documents that wealth inequality is **extremely high and persistent** (wealth Gini ~0.85 vs income ~0.45 in US data).[20]  
+  - Wealth is transmitted across generations through bequests, inter vivos transfers, and differential access to education and housing, making wealth inequality key to analysing **intergenerational mobility**.[4][20]  
+- Recent work builds models where joint distributions of income and wealth explain *low social mobility* in high‑inequality societies, consistent with OECD’s statement that wider inequality “curbs social mobility and opportunities for the poor and people from disadvantaged backgrounds.”[4]  
+
+---
+
+## 4. Practical implications for research design
+
+For studying **distributive processes**, recent literature suggests:
+
+- Use **income inequality** to:
+  - Analyse labour markets, wages, unemployment, and *short‑run* effects of taxes and transfers;  
+  - Decompose **market vs disposable income** to study the redistributive role of the state.[7][14]  
+
+- Use **wealth inequality** to:
+  - Study long‑run accumulation, capital income, housing and financial markets;  
+  - Analyse **power, political influence, and intergenerational mobility**;  
+  - Understand who benefits from asset price booms (e.g. housing, equities).[4][11][20]  
+
+- For comprehensive distributive analysis:
+  - Model **joint income–wealth distributions** and their dynamics;  
+  - Exploit new data (administrative wealth records, distributional national accounts, financial inclusion indicators) to capture both flows and stocks.[1][3][12][18]  
+
+In short: income and wealth inequality are tightly linked and strongly correlated across countries, but they capture different aspects of the distributive process. Recent 2020–2025 research argues that understanding modern inequality requires treating them as **interacting dimensions** rather than choosing one as “more relevant” in general.
+
+### Источники
+
+1. https://www.lse.ac.uk/International-Inequalities/Assets/Documents/Working-Papers/Working-Paper-9-Wealth-Top-Incomes-and-Inequality.pdf
+2. https://pmc.ncbi.nlm.nih.gov/articles/PMC10453242/
+3. https://unctad.org/system/files/official-document/wp-2023d3-no4_en.pdf
+4. https://www.oecd.org/en/publications/society-at-a-glance-2024_918d8db3-en/full-report/income-and-wealth-inequalities_7ac4178f.html
+5. https://repositorio.cepal.org/server/api/core/bitstreams/ac5bcc5a-7ab0-4e3a-867b-323f4611fe1e/content
+6. https://www.pewresearch.org/decoded/2021/07/23/whats-the-difference-between-income-and-wealth-and-other-common-questions-about-economic-concepts/
+7. https://www.myeyze.com/Finance/Tutorials/macro-economy/content/14-income-and-wealth-inequality
+8. https://socialsci.libretexts.org/Bookshelves/Sociology/Introduction_to_Sociology/Sociology_(Boundless)/08:_Global_Stratification_and_Inequality/8.05:_A_Comparative_Analysis_of_Global_Stratification_in_Mexico/8.5A:_Distribution_of_Wealth_and_Income
+9. https://cepr.org/voxeu/columns/equating-inequality-public-perceptions-income-and-wealth-distributions
+10. https://economics.ubc.ca/wp-content/uploads/sites/38/2018/12/pdf_paper_thomas-lemieux-wealth.pdf
+11. https://fairnessfoundation.com/fairness-index/substance/wealth-inequality-is-much-larger-than-income-inequality
+12. https://academic.oup.com/ej/pages/the-economics-of-income-and-wealth-distribution
+13. https://equalitytrust.org.uk/how-economic-inequality-defined/
+14. https://www.europarl.europa.eu/RegData/etudes/BRIE/2016/587294/IPOL_BRI(2016)587294_EN.pdf
+15. https://www.oxfamamerica.org/explore/issues/economic-justice/income-and-wealth-inequality/
+16. https://stonecenter.uchicago.edu/news-insights/wealth-inequality-and-the-u-s-economy-steven-durlauf-with-youth-journalist-jaden-jefferson/
+17. https://wealthproject.gc.cuny.edu/digital-library-of-research/determinants/
+18. https://www.piie.com/microsites/2020/how-fix-economic-inequality
+19. https://www.investopedia.com/terms/i/income-inequality.asp
+20. https://pmc.ncbi.nlm.nih.gov/articles/PMC5560613/
+
+---
+

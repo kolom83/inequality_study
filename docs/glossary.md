@@ -14,3 +14,24 @@
 | Доля труда в ВВП | Доля национального дохода, идущая на оплату труда | `labshare` |
 | ВВП на душу населения | Валовой внутренний продукт на человека | `gdppc` |
 | Неравенство доходов vs богатства | Различие между неравенством потоков дохода и неравенством запасов активов | — |
+
+---
+
+## Выбранные показатели неравенства (UC-5)
+
+| Термин | Определение | Имя в коде |
+|---|---|---|
+| Доля дохода топ-1% (pre-tax) | Доля национального дохода, получаемая верхним 1% населения, до налогов и трансфертов (DINA pre-tax post-replacement). Рекомендован DINA Guidelines 2025 как основной перцентильный показатель. | `top1_share` |
+| Индекс Джини | Сводная мера неравенства распределения доходов, от 0 (равенство) до 1 (полное неравенство). Рекомендован как headline-показатель общего неравенства. | `gini` |
+
+**Выбранные показатели для исследования:** top1_share, gini.
+**Концепция дохода:** pre-tax national income (pretax post-replacement, DINA concept 2).
+**Вид неравенства:** income inequality; wealth inequality рассматривается как дополнение (топ-1% богатства).
+**Обоснование:** DINA Guidelines 2025 (WID/WIL) рекомендуют перцентильные долевые меры как основные: доля топ-1%, топ-10% и нижних 50% на pre-tax национальном доходе. Доля топ-1% наиболее информативна для анализа факторов, связанных с концентрацией капитала и богатства (ключевой механизм, выявленный в UC-2..UC-4). Индекс Джини — стандартная сводная мера всего распределения, используемая как headline-показатель и в кросс-страновых сравнениях.
+
+**Источники (UC-5, Perplexity-ресерч, модель sonar-pro):**
+- DINA Guidelines 2025: https://wid.world/document/distributional-national-accounts-dina-guidelines-2025-methods-and-concepts-used-in-the-world-inequality-database/
+- OECD, Society at a Glance 2024, Income and wealth inequalities: https://www.oecd.org/en/publications/society-at-a-glance-2024_918d8db3-en/full-report/income-and-wealth-inequalities_7ac4178f.html
+- UNCTAD WP 2023 (соотношение неравенства доходов и богатства): https://unctad.org/system/files/official-document/wp-2023d3-no4_en.pdf
+- World Bank, методология измерения неравенства: https://documents1.worldbank.org/curated/en/099549506102441825/pdf/IDU1bd155bac16d78143af188331f87564a9d6c8.pdf
+- Обзор мер неравенства (IZA): https://wol.iza.org/uploads/articles/495/pdfs/measuring-income-inequality.pdf
