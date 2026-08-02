@@ -73,7 +73,7 @@
       </cross_links>
     </module>
 
-    <module id="M-7" status="planned">
+    <module id="M-7" status="done">
       <name>report</name>
       <path>src/report.py</path>
       <purpose>Генерация итогового исследовательского отчёта в Markdown и экспорт в PDF</purpose>

@@ -68,11 +68,11 @@
       </tasks>
     </phase>
 
-    <phase id="P-6" status="planned">
+    <phase id="P-6" status="done">
       <name>Итоговый отчёт</name>
       <description>Агрегация всех результатов в единый отчёт Markdown с экспортом в PDF</description>
       <tasks>
-        <task id="T-7" module_ref="M-7" status="planned">
+        <task id="T-7" module_ref="M-7" status="done">
           <description>Сгенерировать итоговый отчёт со всеми разделами, графиками и таблицами</description>
           <implements>UC-6</implements>
         </task>

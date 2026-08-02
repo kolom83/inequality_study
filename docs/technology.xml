@@ -15,5 +15,10 @@
     <lint_command>ruff check src/</lint_command>
     <format_command>ruff format src/</format_command>
     <run_command>python -m src.main</run_command>
+    <report_command>python run_uc6.py</report_command>
   </tooling>
+  <pdf_export>
+    <tool>pandoc 3.10 (--pdf-engine=typst)</tool>
+    <engine>typst 0.15.1</engine>
+  </pdf_export>
 </technology>

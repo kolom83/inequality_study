@@ -12,3 +12,4 @@ __pycache__/
 .cache/
 data_wid.csv
 output/
+docs/report.pdf
