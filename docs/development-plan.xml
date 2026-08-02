@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<development_plan>
+  <!-- Статусы: planned | in_progress | done | blocked -->
+  <phases>
+    <phase id="P-0" status="done">
+      <name>Инициализация проекта по методологии GRACE</name>
+      <description>Создание скелета: структура папок, контракты, планы, файл-пример с MODULE_CONTRACT</description>
+      <tasks>
+        <task id="T-1" module_ref="M-1" status="done">
+          <description>Создать файл-пример src/main.py с MODULE_CONTRACT и тест tests/test_main.py</description>
+          <implements>UC-1</implements>
+        </task>
+      </tasks>
+    </phase>
+
+    <phase id="P-1" status="planned">
+      <name>Загрузка данных из API WID World</name>
+      <description>Модуль wid_client: подключение к API WID, загрузка показателей неравенства и социально-экономических индикаторов для 20+ стран, кэширование</description>
+      <tasks>
+        <task id="T-2" module_ref="M-2" status="planned">
+          <description>Реализовать клиент API WID World: конфигурация стран и переменных, запросы, pandas DataFrame, кэш</description>
+          <implements>UC-1</implements>
+        </task>
+      </tasks>
+    </phase>
+
+    <phase id="P-2" status="planned">
+      <name>Анализ динамики неравенства во времени</name>
+      <description>Исторический анализ по странам: временные ряды, корреляции Пирсона/Спирмена, тепловые карты</description>
+      <tasks>
+        <task id="T-3" module_ref="M-3" status="planned">
+          <description>Реализовать анализ временных рядов по странам и расчёт корреляций с неравенством</description>
+          <implements>UC-2</implements>
+        </task>
+      </tasks>
+    </phase>
+
+    <phase id="P-3" status="planned">
+      <name>Кросс-страновый анализ</name>
+      <description>Сравнение стран на актуальных данных: scatter plots, кросс-страновые корреляции</description>
+      <tasks>
+        <task id="T-4" module_ref="M-4" status="planned">
+          <description>Реализовать кросс-страновый анализ и расчёт корреляций по выборке стран</description>
+          <implements>UC-3</implements>
+        </task>
+      </tasks>
+    </phase>
+
+    <phase id="P-4" status="planned">
+      <name>Сопоставление результатов и выбор ключевых показателей</name>
+      <description>Сравнение исторической и кросс-страновой корреляции, формирование списка показателей-кандидатов</description>
+      <tasks>
+        <task id="T-5" module_ref="M-5" status="planned">
+          <description>Реализовать сопоставление результатов UC-2 и UC-3 и выбор ключевых показателей</description>
+          <implements>UC-4</implements>
+        </task>
+      </tasks>
+    </phase>
+
+    <phase id="P-5" status="planned">
+      <name>Выбор показателя неравенства на основе исследований</name>
+      <description>Обзор научной литературы 2020-2025, сравнительная таблица показателей, обоснование выбора (с Perplexity для глубокого ресерча)</description>
+      <tasks>
+        <task id="T-6" module_ref="M-6" status="planned">
+          <description>Подготовить глоссарий и обосновать выбор 1-2 показателей неравенства</description>
+          <implements>UC-5</implements>
+        </task>
+      </tasks>
+    </phase>
+
+    <phase id="P-6" status="planned">
+      <name>Итоговый отчёт</name>
+      <description>Агрегация всех результатов в единый отчёт Markdown с экспортом в PDF</description>
+      <tasks>
+        <task id="T-7" module_ref="M-7" status="planned">
+          <description>Сгенерировать итоговый отчёт со всеми разделами, графиками и таблицами</description>
+          <implements>UC-6</implements>
+        </task>
+      </tasks>
+    </phase>
+  </phases>
+</development_plan>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<verification_plan>
+  <test_strategy>
+    <principle>TDD 2.0: сначала агент пишет падающий тест, потом код.</principle>
+    <framework>pytest</framework>
+    <coverage_target>80</coverage_target>
+  </test_strategy>
+  <test_suites>
+    <suite id="TS-1" module_ref="M-1">
+      <path>tests/test_main.py</path>
+      <verifies>UC-1</verifies>
+    </suite>
+    <suite id="TS-2" module_ref="M-2">
+      <path>tests/test_wid_client.py</path>
+      <verifies>UC-1</verifies>
+    </suite>
+    <suite id="TS-3" module_ref="M-3">
+      <path>tests/test_time_series_analysis.py</path>
+      <verifies>UC-2</verifies>
+    </suite>
+    <suite id="TS-4" module_ref="M-4">
+      <path>tests/test_cross_section_analysis.py</path>
+      <verifies>UC-3</verifies>
+    </suite>
+    <suite id="TS-5" module_ref="M-5">
+      <path>tests/test_analysis_comparison.py</path>
+      <verifies>UC-4</verifies>
+    </suite>
+    <suite id="TS-6" module_ref="M-6">
+      <path>tests/test_indicator_selection.py</path>
+      <verifies>UC-5</verifies>
+    </suite>
+    <suite id="TS-7" module_ref="M-7">
+      <path>tests/test_report.py</path>
+      <verifies>UC-6</verifies>
+    </suite>
+  </test_suites>
+  <traces>
+    <trace name="trace_wid_data_load">
+      <description>Лог-маркеры для отслеживания загрузки данных из WID API</description>
+      <markers>
+        <marker>START: wid_data_load</marker>
+        <marker>CHECK: wid_countries_fetched</marker>
+        <marker>CHECK: wid_variables_fetched</marker>
+        <marker>END: wid_data_load</marker>
+      </markers>
+    </trace>
+  </traces>
+</verification_plan>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowledge_graph>
+  <project_name>Исследование факторов неравенства на основе API WID World</project_name>
+  <modules>
+    <module id="M-1" status="done">
+      <name>main</name>
+      <path>src/main.py</path>
+      <purpose>Точка входа проекта, файл-пример с MODULE_CONTRACT для демонстрации паттерна GRACE</purpose>
+      <test_path>tests/test_main.py</test_path>
+      <cross_links />
+    </module>
+
+    <module id="M-2" status="planned">
+      <name>wid_client</name>
+      <path>src/wid_client.py</path>
+      <purpose>Загрузка данных неравенства и социально-экономических показателей из API WID World с кэшированием ответов</purpose>
+      <test_path>tests/test_wid_client.py</test_path>
+      <cross_links>
+        <cross_link target="UC-1" type="implements_uc" />
+      </cross_links>
+    </module>
+
+    <module id="M-3" status="planned">
+      <name>time_series_analysis</name>
+      <path>src/time_series_analysis.py</path>
+      <purpose>Анализ динамики неравенства во времени по отдельным странам: временные ряды и корреляции Пирсона/Спирмена</purpose>
+      <test_path>tests/test_time_series_analysis.py</test_path>
+      <cross_links>
+        <cross_link target="M-2" type="depends_on" />
+        <cross_link target="UC-2" type="implements_uc" />
+      </cross_links>
+    </module>
+
+    <module id="M-4" status="planned">
+      <name>cross_section_analysis</name>
+      <path>src/cross_section_analysis.py</path>
+      <purpose>Кросс-страновый анализ: scatter plots и корреляции на актуальных данных между странами</purpose>
+      <test_path>tests/test_cross_section_analysis.py</test_path>
+      <cross_links>
+        <cross_link target="M-2" type="depends_on" />
+        <cross_link target="UC-3" type="implements_uc" />
+      </cross_links>
+    </module>
+
+    <module id="M-5" status="planned">
+      <name>analysis_comparison</name>
+      <path>src/analysis_comparison.py</path>
+      <purpose>Сопоставление исторической и кросс-страновой корреляции, выбор ключевых показателей-кандидатов</purpose>
+      <test_path>tests/test_analysis_comparison.py</test_path>
+      <cross_links>
+        <cross_link target="M-3" type="depends_on" />
+        <cross_link target="M-4" type="depends_on" />
+        <cross_link target="UC-4" type="implements_uc" />
+      </cross_links>
+    </module>
+
+    <module id="M-6" status="planned">
+      <name>indicator_selection</name>
+      <path>src/indicator_selection.py</path>
+      <purpose>Выбор наиболее релевантного показателя неравенства на основе обзора исследований (UC-5), работа с глоссарием</purpose>
+      <test_path>tests/test_indicator_selection.py</test_path>
+      <cross_links>
+        <cross_link target="UC-5" type="implements_uc" />
+      </cross_links>
+    </module>
+
+    <module id="M-7" status="planned">
+      <name>report</name>
+      <path>src/report.py</path>
+      <purpose>Генерация итогового исследовательского отчёта в Markdown и экспорт в PDF</purpose>
+      <test_path>tests/test_report.py</test_path>
+      <cross_links>
+        <cross_link target="M-5" type="depends_on" />
+        <cross_link target="M-6" type="depends_on" />
+        <cross_link target="UC-6" type="implements_uc" />
+      </cross_links>
+    </module>
+  </modules>
+</knowledge_graph>

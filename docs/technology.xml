@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<technology>
+  <runtime>Python 3.10+ (актуальная: 3.10.11)</runtime>
+  <language>Python</language>
+  <framework>pandas (2.2.0)</framework>
+  <key_libraries>
+    <library purpose="загрузка данных из API WID World">requests</library>
+    <library purpose="численные расчёты и статистика">numpy, scipy</library>
+    <library purpose="визуализация">matplotlib</library>
+    <library purpose="окружение и секреты">python-dotenv</library>
+    <library purpose="ресерч через Perplexity (только UC-5)">perplexity</library>
+  </key_libraries>
+  <tooling>
+    <test_command>python -m pytest tests/ -v</test_command>
+    <lint_command>ruff check src/</lint_command>
+    <format_command>ruff format src/</format_command>
+    <run_command>python -m src.main</run_command>
+  </tooling>
+</technology>
