@@ -10,12 +10,21 @@
       <cross_links />
     </module>
 
-    <module id="M-2" status="planned">
+    <module id="M-8" status="done">
+      <name>config</name>
+      <path>src/config.py</path>
+      <purpose>Конфигурация проекта: список стран, переменных WID, период, параметры API. Единственное место с магическими константами.</purpose>
+      <test_path>tests/test_config.py</test_path>
+      <cross_links />
+    </module>
+
+    <module id="M-2" status="done">
       <name>wid_client</name>
       <path>src/wid_client.py</path>
       <purpose>Загрузка данных неравенства и социально-экономических показателей из API WID World с кэшированием ответов</purpose>
       <test_path>tests/test_wid_client.py</test_path>
       <cross_links>
+        <cross_link target="M-8" type="depends_on" />
         <cross_link target="UC-1" type="implements_uc" />
       </cross_links>
     </module>

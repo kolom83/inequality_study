@@ -9,3 +9,5 @@ __pycache__/
 
 # Outputs
 *.png
+.cache/
+data_wid.csv

@@ -13,12 +13,12 @@
       </tasks>
     </phase>
 
-    <phase id="P-1" status="planned">
+    <phase id="P-1" status="done">
       <name>Загрузка данных из API WID World</name>
       <description>Модуль wid_client: подключение к API WID, загрузка показателей неравенства и социально-экономических индикаторов для 20+ стран, кэширование</description>
       <tasks>
-        <task id="T-2" module_ref="M-2" status="planned">
-          <description>Реализовать клиент API WID World: конфигурация стран и переменных, запросы, pandas DataFrame, кэш</description>
+        <task id="T-2" module_ref="M-2" status="done">
+          <description>Реализовать конфигурацию (M-8) и клиент API WID World (M-2): список стран и переменных, запросы, pandas DataFrame, кэш</description>
           <implements>UC-1</implements>
         </task>
       </tasks>
