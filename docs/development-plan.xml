@@ -35,11 +35,11 @@
       </tasks>
     </phase>
 
-    <phase id="P-3" status="planned">
+    <phase id="P-3" status="done">
       <name>Кросс-страновый анализ</name>
       <description>Сравнение стран на актуальных данных: scatter plots, кросс-страновые корреляции</description>
       <tasks>
-        <task id="T-4" module_ref="M-4" status="planned">
+        <task id="T-4" module_ref="M-4" status="done">
           <description>Реализовать кросс-страновый анализ и расчёт корреляций по выборке стран</description>
           <implements>UC-3</implements>
         </task>

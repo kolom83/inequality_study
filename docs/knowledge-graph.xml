@@ -40,7 +40,7 @@
       </cross_links>
     </module>
 
-    <module id="M-4" status="planned">
+    <module id="M-4" status="done">
       <name>cross_section_analysis</name>
       <path>src/cross_section_analysis.py</path>
       <purpose>Кросс-страновый анализ: scatter plots и корреляции на актуальных данных между странами</purpose>
