@@ -46,11 +46,11 @@
       </tasks>
     </phase>
 
-    <phase id="P-4" status="planned">
+    <phase id="P-4" status="done">
       <name>Сопоставление результатов и выбор ключевых показателей</name>
       <description>Сравнение исторической и кросс-страновой корреляции, формирование списка показателей-кандидатов</description>
       <tasks>
-        <task id="T-5" module_ref="M-5" status="planned">
+        <task id="T-5" module_ref="M-5" status="done">
           <description>Реализовать сопоставление результатов UC-2 и UC-3 и выбор ключевых показателей</description>
           <implements>UC-4</implements>
         </task>

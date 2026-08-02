@@ -51,7 +51,7 @@
       </cross_links>
     </module>
 
-    <module id="M-5" status="planned">
+    <module id="M-5" status="done">
       <name>analysis_comparison</name>
       <path>src/analysis_comparison.py</path>
       <purpose>Сопоставление исторической и кросс-страновой корреляции, выбор ключевых показателей-кандидатов</purpose>
