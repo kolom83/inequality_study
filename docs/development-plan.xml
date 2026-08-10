@@ -78,5 +78,15 @@
         </task>
       </tasks>
     </phase>
+  <phase id="P-7" status="done">
+      <name>Разделение неравенства доходов по видам (трудовой/капитальный)</name>
+      <description>Проверка гипотезы, что связь концентрации богатства с неравенством доходов идёт через капитальный доход: выделение распределительных переменных трудового (ptlin/spllin/flinc) и капитального (ptkin/spkkin) дохода, анализ корреляций каждого вида с shweal_p99p100, сравнение силы видов</description>
+      <tasks>
+        <task id="T-8" module_ref="M-9" status="done">
+          <description>Реализовать модуль income_type_analysis (M-9): классификация переменных по видам, временные корреляции с shweal, сравнение труда vs капитала, графики</description>
+          <implements>UC-7</implements>
+        </task>
+      </tasks>
+    </phase>
   </phases>
 </development_plan>

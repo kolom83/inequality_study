@@ -84,5 +84,17 @@
         <cross_link target="UC-6" type="implements_uc" />
       </cross_links>
     </module>
+
+    <module id="M-9" status="done">
+      <name>income_type_analysis</name>
+      <path>src/income_type_analysis.py</path>
+      <purpose>Разделение неравенства доходов на трудовую и капитальную компоненту; проверка гипотезы о механизме связи концентрации богатства с неравенством доходов через капитальный доход</purpose>
+      <test_path>tests/test_income_type_analysis.py</test_path>
+      <cross_links>
+        <cross_link target="M-2" type="depends_on" />
+        <cross_link target="M-8" type="depends_on" />
+        <cross_link target="UC-7" type="implements_uc" />
+      </cross_links>
+    </module>
   </modules>
 </knowledge_graph>
